@@ -59,8 +59,44 @@ header {
         font-family: $big-font;
         font-size: 20px;
         margin: 0 10px;
+        cursor: pointer;
     }
     a:hover {
         color: $accent;
+    }
+}
+
+    //Adjusting font sizes for smaller screens
+@media only screen and (max-width: 960px) {
+    header {
+        h1 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
+    .primary-nav {
+        a {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    header {
+        h1 {
+            font-size: 40px;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: none;
+        }
+        div {
+            margin-bottom: 3vh;
+        }
     }
 }
