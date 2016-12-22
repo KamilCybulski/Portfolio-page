@@ -65,6 +65,7 @@ header {
   header h3 {
     font-size: 13px;
     font-weight: 400;
-    letter-spacing: none; }
+    letter-spacing: none;
+    text-align: center; }
   header div {
     margin-bottom: 3vh; } }
