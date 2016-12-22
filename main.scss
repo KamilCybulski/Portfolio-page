@@ -6,6 +6,7 @@ $primary-dark: #455A64;
 $accent: #00BCD4;
 $primary-text: #FFFFFF;
 $accent-text: #212121;
+$bg-shade: rgba(0,0,0,.7);
 
 $big-font: 'Raleway', sans-serif;
 $small-font: 'Muli', sans-serif;
@@ -14,9 +15,52 @@ $small-font: 'Muli', sans-serif;
                     Header
 ==================================================*/
 header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    background: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/ny.jpg");
-    background: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/ny.jpg");
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/ny.jpg");
+    background: -webkit-linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background: -o-linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background: linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background-size: cover;
+    padding-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    h1 {
+        color: $primary-text;
+        font-family: $big-font;
+        font-size: 80px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+    h3 {
+        color: $primary-text;
+        font-family: $big-font;
+        font-size: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+}
+
+.primary-nav {
+    margin-bottom: 20vh;
+    a {
+        text-decoration: none;
+        color: $primary-text;
+        font-family: $big-font;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    a:hover {
+        color: $accent;
+    }
 }

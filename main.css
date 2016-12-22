@@ -5,8 +5,45 @@
                     Header
 ==================================================*/
 header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ny.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ny.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ny.jpg"); }
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/ny.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/ny.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/ny.jpg");
+  background-size: cover;
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh; }
+  header h1 {
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+  header h3 {
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+
+.primary-nav {
+  margin-bottom: 20vh; }
+  .primary-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0 10px; }
+  .primary-nav a:hover {
+    color: #00BCD4; }
