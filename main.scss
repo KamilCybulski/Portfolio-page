@@ -109,10 +109,10 @@ header {
     background: linear-gradient($light-accent, $accent);
     padding: 20vh 10vw;
     h2 {
-        width: 150px;
+        width: 180px;
         margin: auto;
         font-family: $big-font;
-        font-size: 24px;
+        font-size: 30px;
         color: $primary-text;
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -155,10 +155,21 @@ header {
 .work {
     background-color: $primary;
     padding: 10vh 0;
+        h2 {
+        width: 180px;
+        margin: 150px auto;
+        font-family: $big-font;
+        font-size: 30px;
+        color: $accent-text;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-weight: 900;
+    }
 }
 .work-lockup {
     width: 90%;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
