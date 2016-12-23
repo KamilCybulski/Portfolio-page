@@ -266,12 +266,12 @@ footer {
     align-items: flex-end;
     font-family: $big-font;
     color: $primary-text;
-    padding-top: 50px;
+    padding-top: 40px;
     h6 {
-        font-size: 10px;
+        font-size: 14px;
     }
     a {
-        font-size: 16px;
+        font-size: 20px;
         text-decoration: none;
         color: $primary-text;
         margin: 0 10px;
@@ -282,7 +282,7 @@ footer {
 }
 
     //for small screens
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     .secondary-nav {
         display: none;
     }
