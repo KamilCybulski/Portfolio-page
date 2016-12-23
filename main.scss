@@ -1,9 +1,10 @@
 /*==================================================
       Declaring variables for colors and fonts
 ==================================================*/
-$primary: #607D8B;
-$primary-dark: #455A64;
+$primary:#F5F5F5;
+$primary-dark: #616161;
 $accent: #00BCD4;
+$light-accent: #66DDED;
 $primary-text: #FFFFFF;
 $accent-text: #212121;
 $bg-shade: rgba(0,0,0,.7);
@@ -96,8 +97,193 @@ header {
             letter-spacing: none;
             text-align: center;
         }
-        div {
-            margin-bottom: 3vh;
+    }
+}
+
+/*==================================================
+                    About Me
+==================================================*/
+.about {
+    background: -webkit-linear-gradient($light-accent, $accent);
+    background: -o-linear-gradient($light-accent, $accent);
+    background: linear-gradient($light-accent, $accent);
+    padding: 20vh 10vw;
+    h2 {
+        width: 150px;
+        margin: auto;
+        font-family: $big-font;
+        font-size: 24px;
+        color: $primary-text;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-weight: 900;
+    }
+    p {
+        width: 400px;
+        margin: 10px auto;
+        text-align: center;
+        font-family: $small-font;
+        color: $primary-text;
+        font-size: 17px;
+        line-height: 200%;
+        font-weight: 700;
+    }
+}
+.face-photo {
+    width: 250px;
+    margin: 10vh auto;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+    //For small screens
+@media only screen and (max-width: 500px) {
+    .about{
+        p{
+            width: 90%;
+            font-size: 16px;
+            text-align: justify;
         }
+    }
+}
+
+/*==================================================
+                    Work section
+==================================================*/
+.work {
+    background-color: $primary;
+    padding: 10vh 0;
+}
+.work-lockup {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    a {
+        width: 300px;
+        height: 350px;
+        background-size: cover;
+        text-decoration: none;
+    }
+}
+.overlay {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $bg-shade;
+    width: 300px;
+    height: 350px;
+    padding: 40px;
+    text-align: center;
+    font-family: $small-font;
+    color: $primary-text;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0;
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+}
+.overlay:hover {
+    opacity: 1;
+}
+        //For too big screens:
+@media only screen and (min-width: 1300px){
+.work-lockup {
+    width: 1170px;
+    }
+}
+
+
+/*==================================================
+                 Thumbnail images
+==================================================*/
+#project-1 {
+    background-image: url("images/app.jpg");
+}
+#project-2 {
+    background-image: url("images/camera.jpg");
+}
+#project-3 {
+    background-image: url("images/coffee.jpg");
+}
+#project-4 {
+    background-image: url("images/design.jpg");
+}
+#project-5 {
+    background-image: url("images/desk.jpg");
+}
+#project-6 {
+    background-image: url("images/risk.jpg");
+}
+
+/*==================================================
+                     Footer
+==================================================*/
+footer {
+    width: 100%;
+    height: 200px;
+    background: -webkit-linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background: -o-linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background: linear-gradient($bg-shade, $bg-shade), url("images/ny.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    h2 {
+        font-family: $big-font;
+        color: $primary-text;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+.contact {
+    margin: 30px auto;
+    width: 170px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    i {
+        margin: 0 20px;
+        color: $primary-text;
+        text-decoration: none;
+        font-size: 2.5em;
+    }
+    i:hover {
+        color: $accent;
+    }
+}
+
+.row3 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: $big-font;
+    color: $primary-text;
+    padding-top: 50px;
+    h6 {
+        font-size: 10px;
+    }
+    a {
+        font-size: 16px;
+        text-decoration: none;
+        color: $primary-text;
+        margin: 0 10px;
+    }
+    a:hover {
+        color: $accent;
+    }
+}
+
+    //for small screens
+@media only screen and (max-width: 400px){
+    .secondary-nav {
+        display: none;
     }
 }
