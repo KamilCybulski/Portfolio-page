@@ -117,7 +117,7 @@ header {
   padding: 10vh 0; }
   .work h2 {
     width: 180px;
-    margin: 150px auto;
+    margin: 50px auto;
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     color: #212121;
@@ -128,7 +128,7 @@ header {
 
 .work-lockup {
   width: 90%;
-  margin: 100px auto;
+  margin: 150px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
